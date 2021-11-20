@@ -10,7 +10,7 @@
 
 ## Ход проверки
 
-### [Часть 1. Произведем преобразование типов] (https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%201/user2018.py)
+* [Часть 1. Произведем преобразование типов] (https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%201/user2018.py)
 import pandas as pd
 df = pd.read_csv('gamedev38/events.csv')
 df2 = pd.read_csv('gamedev38/purchase.csv')
