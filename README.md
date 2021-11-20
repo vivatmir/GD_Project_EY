@@ -10,7 +10,7 @@
 
 ## Ход проверки
 
-Произведем преобразование типов (user.py)
+### Произведем преобразование типов (user.py)
 import pandas as pd
 df = pd.read_csv('gamedev38/events.csv')
 df2 = pd.read_csv('gamedev38/purchase.csv')
