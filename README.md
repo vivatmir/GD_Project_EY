@@ -16,7 +16,7 @@
 
 [Часть 3 Находим группы пользователей по уровню сложности, который был выбран для тренировок](https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%203/training.py)
 
-[Часть 4 Сформируем группы](https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%203/group.py)
+[Часть 4 Сформируем группы](https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%204/group.py)
 
 
 
