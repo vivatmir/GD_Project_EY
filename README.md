@@ -25,3 +25,5 @@ purchase = df2[df2.user_id.isin(registered2)]
 purchase.event_datetime = pd.to_datetime(purchase.event_datetime, format='%Y-%m-%dT%H:%M:%S')
 print(events.start_time)
 print(purchase.event_datetime)
+
+### Сделаем объединенный датафрейм из событий и оплат (events_purchase.py)
