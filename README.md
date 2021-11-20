@@ -10,7 +10,7 @@
 
 ## Ход проверки
 
-### Произведем преобразование типов (user.py)
+### Часть 1. Произведем преобразование типов (user.py)
 import pandas as pd
 df = pd.read_csv('gamedev38/events.csv')
 df2 = pd.read_csv('gamedev38/purchase.csv')
@@ -26,16 +26,16 @@ purchase.event_datetime = pd.to_datetime(purchase.event_datetime, format='%Y-%m-
 print(events.start_time)
 print(purchase.event_datetime)
 
-### Сделаем объединенный датафрейм из событий и оплат (events_purchase.py)
+### Часть 2. Сделаем объединенный датафрейм из событий и оплат (events_purchase.py)
 import pandas as pd
 df = pd.read_csv('gamedev38/events.csv')
 df2 = pd.read_csv('gamedev38/purchase.csv')
 total_events_df = pd.concat([df,df2],sort=False)
 print(total_events_df)
 
-### Сделаем группы пользователей по уровню сложности, который был выбран для тренировок (training.py)
+### Часть 3. Сделаем группы пользователей по уровню сложности, который был выбран для тренировок (training.py)
 
-#### Уровни
+#### Часть 3.1 Уровни
 import pandas as pd
 df = pd.read_csv('gamedev38/events.csv')
 df2 = pd.read_csv('gamedev38/purchase.csv')
