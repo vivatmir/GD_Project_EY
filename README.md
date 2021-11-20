@@ -44,6 +44,7 @@ print(total_events_df['selected_level'].unique())
 
 Результат: [nan 'hard' 'easy' 'medium']
 
-#### Сформируем группы
+#### Сформируем группы (group.py)
+
 
 
