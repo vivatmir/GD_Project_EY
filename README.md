@@ -27,3 +27,11 @@ print(events.start_time)
 print(purchase.event_datetime)
 
 ### Сделаем объединенный датафрейм из событий и оплат (events_purchase.py)
+import pandas as pd
+df = pd.read_csv('gamedev38/events.csv')
+df2 = pd.read_csv('gamedev38/purchase.csv')
+total_events_df = pd.concat([df,df2],sort=False)
+print(total_events_df)
+
+### Сделаем группы пользователей по уровню сложности, который был выбран для тренировок (training.py)
+
