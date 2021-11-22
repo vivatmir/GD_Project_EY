@@ -10,7 +10,7 @@
 
 ## Ход проверки
 
-[Часть 1. Произведем преобразование типов](https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%201/user2018.py)
+[Часть 1. Произведем преобразование типов](https://github.com/vivatmir/GD_Project_EY/blob/main/Part_1/user2018.py)
 
 [Часть 2. Сделаем объединенный датафрейм из событий и оплат](https://github.com/vivatmir/GD_Project_EY/blob/main/%D0%A7%D0%B0%D1%81%D1%82%D1%8C%202/events_purchase.py)
 

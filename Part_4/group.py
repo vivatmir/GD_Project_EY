@@ -23,4 +23,15 @@ for group in user_groups:
     percent_of_purchase = purchase_df_slice['user_id'].nunique()/count_of_users_in_group
     print ('Процент оплативших пользователей, выбравших уровень сложности {}: {:.2%}'.format(level,percent_of_purchase))
     print ()
-    
+    level_choice_df = total_events_df[(total_events_df['event_type'] == 'level_choice') & (total_events_df['user_id'].isin(group_users['user_id']))]
+    if (level_choice_df['user_id'].value_counts().mean()) == 1:
+        level_choice_df = level_choice_df[['user_id','start_time']].rename(columns={'start_time':'level_choice_time'})
+        purchase_df_slice_2 = purchase_df_slice[['user_id','start_time']].rename(columns={'start_time':'purchase_time'})
+        merged_df = purchase_df_slice_2.merge(level_choice_df,on='user_id',how='inner')
+        merged_df['timedelta'] = merged_df['purchase_time'] - merged_df['level_choice_time']
+        mean_time = merged_df['timedelta'].mean()
+        print ('Среднее время между выбором уровня сложности и оплатой для пользователей, выбравших уровень сложности {}: {}'.format(level,mean_time))
+        print ('Характеристики времени:')
+        print (merged_df['timedelta'].describe())
+    else:
+        print ('Более 1 события выбора уровня сложности')
