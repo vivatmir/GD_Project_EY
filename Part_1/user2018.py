@@ -1,6 +1,6 @@
 import pandas as pd
-df = pd.read_csv('gamedev38/events.csv')
-df2 = pd.read_csv('gamedev38/purchase.csv')
+df = pd.read_csv('7_4_Events.csv')
+df2 = pd.read_csv('purchase.csv')
 cond = (df.start_time>='2018-01-01') & (df.start_time<'2019-01-01') & (df.event_type=='registration')
 cond2 = (df2.event_datetime>='2018-01-01') & (df2.event_datetime<'2019-01-01') & (df.event_type=='registration')
 registered = df[cond]['user_id'].to_list()
